@@ -55,6 +55,11 @@
   <script src="{{$popover.Permalink}}"></script>
 
   <!-- Optional scripts -->
+  {{ if $.Site.Data.config.disablecopycontent }}
+  {{ $copy := resources.Get "js/disable-copy.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$copy.Permalink}}"></script>
+  {{end}}
+
   {{ if $.Site.Data.config.enableCodeBlockTitle }}
   {{ $codeTitle := resources.Get "js/code-title.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script src="{{$codeTitle.Permalink}}"></script>
@@ -187,13 +192,6 @@
 
 <!-- Custom .js -->
 <!-- 1. DisableCopy -->
-<script type="text/javascript">
-  document.oncontextmenu = new Function("return false");
-  const disableselect = (e) => {
-        return false
-  }
-  document.onselectstart = disableselect
-  document.onmousedown = disableselect
-</script>
+
 <!-- End - DisableCopy -->
 <!-- end -->
