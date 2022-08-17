@@ -28,4 +28,4 @@ jobs:
           # Path to the directory where the static assets are located.
           build_dir: /home/runner/work/gpq4utjefs.github.io/gpq4utjefs.github.io/gpq4utjefs.github.io
           # Create github token in repo/settings/secrets/actions with name GithubToken
-          github_token: ${{ secrets.GithubToken }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
