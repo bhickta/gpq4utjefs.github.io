@@ -17,8 +17,6 @@ jobs:
         run: |
           ls
           git clone https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
-          cd gpq4utjefs.github.io.git
-          ls
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.17
