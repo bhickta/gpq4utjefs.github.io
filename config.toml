@@ -4,7 +4,7 @@ googleAnalytics = "G-YEL52P24M9"
 disqusShortname = 'himgk'
 relativeURLs = false
 disablePathToLower = true
-custom_js = ["js/custom.js"]
+custom_js = "js/custom.js"
 ignoreFiles = [
     "/content/templates/*",
     "/content/private/*",
