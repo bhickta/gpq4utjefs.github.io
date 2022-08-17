@@ -16,8 +16,10 @@ jobs:
       - name: commit and push to hugo branch
         run: |
           git clone --branch hugo https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
-          cd gpq4utjefs.github.io
-          pwd
+          cd gpq4utjefs.github.io/content
+          git clone --branch obsidian https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
+          mv gpq4utjefs.github.io/* .
+          rm -r gpq4utjefs.github.io
       - name: Deploy.
         uses: s0/git-publish-subdir-action@develop
         env:
