@@ -19,6 +19,7 @@ jobs:
           cd gpq4utjefs.github.io
           rm -r .git
           cd content
+          pwd
           git clone --branch obsidian https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
           rm -r .git .github
           mv gpq4utjefs.github.io/* .
