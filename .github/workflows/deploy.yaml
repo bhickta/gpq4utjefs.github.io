@@ -20,8 +20,6 @@ jobs:
       - name: checking current directory
         run: |
           ls
-          cd ..
-          ls
       # - uses: peaceiris/actions-gh-pages@v3
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
