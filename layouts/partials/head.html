@@ -36,12 +36,7 @@
 
   {{$lightSyntax := resources.Get "styles/_light_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
   <link href="{{$lightSyntax.Permalink}}" rel="stylesheet" id="theme-link">
-
-  <!-- Custom script inclusion  -->
-  {{ range .Site.Params.custom_js -}}
-  <link rel="stylesheet" href="{{ . | absURL }}">
-  {{- end }}
-  <!-- end -->
+ 
   <!-- Base scripts -->
   {{$scripts := (slice "js/darkmode.js" "js/util.js")}}
   {{range $scripts}}
@@ -72,6 +67,14 @@
   {{ $callouts := resources.Get "js/callouts.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script src="{{$callouts.Permalink}}"></script>
   {{ end }}
+  
+  <!-- Custom script inclusion  -->
+  {{ if $.Site.Data.config.disablecopy }}
+  {{ $disablecopy := resources.Get "js/disablecopy.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$disablecopy.Permalink}}"></script>
+  {{ end }}
+  <!-- end -->
+
 
   <!--  Preload page vars  -->
   {{$linkIndex := resources.Get "indices/linkIndex.json" | resources.Fingerprint
