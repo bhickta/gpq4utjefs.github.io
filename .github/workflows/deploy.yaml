@@ -19,6 +19,7 @@ jobs:
           cd gpq4utjefs.github.io
           pwd
           ls
+          rm -r .git
       - name: Push to gh-pages branch --force
         # You may pin to the exact commit or the version.
         # uses: ftnext/action-push-ghpages@621f3b2f1d34079b4da6051daedb3e200af0dd38
