@@ -1,0 +1,5 @@
+# Footer
+<div class="footer-copyright section" id="footer-copyright" name="Footer Attribution"><div class="widget HTML" data-version="2" id="HTML33">
+<div class="widget-content" style="visibility:visible!important;opacity:1!important;position:relative!important;z-index:1!important;text-indent: 1px!important;font-size:14px!important;color:#686868!important;margin:0!important;">
+<span class="copyright-text widget" style="visibility:visible!important;opacity:1!important;position:relative!important;z-index:1!important;text-indent: 1px!important;font-size:14px!important;color:#686868!important;margin:0!important;">Design by - <a href="https://www.pikitemplates.com/" id="pikitemplates" rel="dofollow" style="visibility:visible!important;opacity:1!important;position:relative!important;z-index:1!important;text-indent: 1px!important;font-size:14px!important;color:#686868!important;margin:0!important;">Blogger Templates</a> | Distributed by <a href="https://www.himexam.com/" rel="dofollow"> www.Himexam.com</a></span>
+</div>
