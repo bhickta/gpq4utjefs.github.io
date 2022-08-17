@@ -280,7 +280,7 @@
 
 <!-- Custom .js -->
 {{ if $.Site.Data.config.disablecopy }}
-{{ $disablecopy := resources.Get "js/disablecopy.js" | resources.Fingerprint "md5" | resources.Minify }}
-<script src="{{$disablecopy.Permalink}}"></script>
+{{ $d-copy := resources.Get "js/disable-copy.js" | resources.Fingerprint "md5" | resources.Minify }}
+<script src="{{$d-copy.Permalink}}"></script>
 {{ end }}
 <!-- end -->
