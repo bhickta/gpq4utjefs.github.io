@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+
+<body>
+{{partial "search.html" .}}
+<div class="singlePage">
+    <!-- Begin actual content -->
+    {{partial "header.html" .}}
+    <article>
+        <h1>{{.Title}}</h1>
+        {{partial "breadcrumbs.html" .}}
+        {{with .Params.description}}
+            <p>{{.}}</p>
+        {{end}}
+        {{partial "page-list.html" .Pages }} <!-- .Paginator.Pages.ByLastmod.Reverse -->
+        {{ template "_internal/pagination.html" .}}
+    </article>
+    {{partial "contact.html" .}}
+</div>
+</body>
+
+</html>
