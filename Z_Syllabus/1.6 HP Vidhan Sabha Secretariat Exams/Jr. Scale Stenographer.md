@@ -1,2 +1,0 @@
-# Jr. Scale Stenographer
-![[Clerk]]

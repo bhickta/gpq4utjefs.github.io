@@ -1,1 +1,0 @@
-# Poor and Infirms

@@ -1,2 +1,0 @@
-# Raja Rajender Pal
-* Marriage:: Small state named “Kothi Barsai” between Jagatsukh and Naggar in #district/kullu with chief Surat Chand died without male, left only with daughter named Rup Sundari, made several failed acquisition attempts, Rajender Pal’s brother offered her proposal of #marriage with rajender's son [[02 Raja Visud Pal]] --> marriage --> ended enmity

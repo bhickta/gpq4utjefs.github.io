@@ -1,2 +1,0 @@
-# Cleaner
-![[Chowkidar]]

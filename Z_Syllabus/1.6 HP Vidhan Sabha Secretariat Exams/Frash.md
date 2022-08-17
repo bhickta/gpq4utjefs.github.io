@@ -1,2 +1,0 @@
-# Frash
-![[Chowkidar]]
