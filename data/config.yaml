@@ -28,4 +28,5 @@ links:
 ##############################################################
 # Added by Nishant Bhickta
 disablecopycontent: true
+enableaddblockerdetection: true
 ##############################################################

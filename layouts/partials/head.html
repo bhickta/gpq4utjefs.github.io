@@ -62,6 +62,12 @@
   {{ $copy := resources.Get "js/disable-copy.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script src="{{$copy.Permalink}}"></script>
   {{end}}
+
+  {{ if $.Site.Data.config.enableaddblockerdetection }}
+  {{ $block := resources.Get "js/blocker-detection.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$block.Permalink}}"></script>
+  {{end}}
+
   <!-- ############################################## -->
 
   {{ if $.Site.Data.config.enableCodeBlockTitle }}
