@@ -8,11 +8,12 @@
     <!-- Begin actual content -->
     {{partial "header.html" .}}
     <article>
-        <h1>All {{.Title}}</h1>
+        <h1>{{.Title}}</h1>
+        {{partial "breadcrumbs.html" .}}
         {{with .Params.description}}
             <p>{{.}}</p>
         {{end}}
-        {{partial "page-list.html" .Paginator.Pages.ByLastmod.Reverse }}
+        {{partial "page-list.html" .Pages }} <!-- .Paginator.Pages.ByLastmod.Reverse -->
         {{ template "_internal/pagination.html" .}}
     </article>
     {{partial "contact.html" .}}
