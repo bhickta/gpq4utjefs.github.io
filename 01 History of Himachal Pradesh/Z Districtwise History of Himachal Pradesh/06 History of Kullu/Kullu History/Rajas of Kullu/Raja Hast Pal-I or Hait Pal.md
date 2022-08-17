@@ -1,0 +1,4 @@
+# Raja Hast Pal-I or Hait Pal
+* Grandson of [[Raja Bhup Pal]]
+* Win:: He freed & #regain #district/kullu from the tribute on the condition of giving aid to [[Raja Bikram Se]] grandson of Bir Sen of Suket in Suket in a civil war, later [[Raja Bikram Se]] went on a pilgrimage to Haridwar and made his younger brother “Tribikram Sen” in charge of the state but Tribikram Sen became king with help of [[Raja Hast Pal-I or Hait Pal]]
+* Lost:: [[Raja Bikram Se]] of Suket sought help from [[Keonthal Stat]] and a battle took place at “Jiuri” on the bank of Satluj, in which both [[Raja Hast Pal-I or Hait Pal]] and Tribikram were killed, then he #attacked Kullu and took possession

@@ -1,0 +1,3 @@
+# Raja Jai Singh
+* Side-actors:: Wazir “Kalu of Diyar” and expelled him from the country. Wazir raised revolt Raja went Lahore to seek Mughal’s viceroy support  |  Raja Jai Singh did not return to Kullu but went to Ayodhya to start living there to worship Raghunath Ji till death, leaving state to cusion [[Raja Tedi Singh]]
+* Lost:: [[Raja Shamsher Se]] of Mandi #attacked #district/kullu and acquired Chauhar territory after [[Raja Jai Singh]] was expelled by his Wazir

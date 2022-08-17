@@ -1,0 +1,4 @@
+# Kullu under Britisher
+ * Kullu state along with capital Sultanpur remained under the control of the British, granted Shangri to Ranbir Singh who was the first cousin of Ajit Singh but, Sikh selected Thakur Singh another cousin as Raja of “Waziri Ruppi”. After first Anglo-Sikh war hill country between the Satluj and Indus came under Britishers including Kullu
+  * By Britisher, Spiti was separated from Ladakh and merged with Kullu. Thakur Singh died in 1852 and succeeded by his illegitimate son Gayan Singh, Britishers withdrew all political power from him and gave the title of Rai instead of Raja.
+ * Shortly before 1857, Pratap Singh son of Krishan Singh (Uncle of Raja Ajit Singh) appeared in Kullu, Put forward his claim for ‘Gaddi’. He was arrested by Major Hay and after the trial was hanged at Dharamshala’
