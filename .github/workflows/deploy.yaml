@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - hugo
+      - obsidian
 
 jobs:
   deploy:
