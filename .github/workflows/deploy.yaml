@@ -9,18 +9,15 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: commit and push to hugo branch
         run: |
           git clone --branch hugo https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
           cd gpq4utjefs.github.io
           pwd
-          ls
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-      - name: checking current directory
-        run: |
-          cd /home/runner/work/gpq4utjefs.github.io/gpq4utjefs.github.io/gpq4utjefs.github.io
           ls
       - name: Push to gh-pages branch --force
         # You may pin to the exact commit or the version.
