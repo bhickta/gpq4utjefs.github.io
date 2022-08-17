@@ -20,7 +20,7 @@ jobs:
           rm -r .git
           cd content
           git clone --branch obsidian https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
-          rm -r .*
+          rm -r .git .github
           mv gpq4utjefs.github.io/* .
           rm -r gpq4utjefs.github.io
       - name: Deploy.
