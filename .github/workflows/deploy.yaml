@@ -28,7 +28,9 @@ jobs:
           extended: true
       - name: File path
         run: ls
-        
+        run: cd content
+        run: sh script.sh
+
       - name: Build
         run: hugo --minify
 
