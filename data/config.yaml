@@ -7,7 +7,6 @@ enableCodeBlockTitle: true
 enableCodeBlockCopy: true
 enableCallouts: true
 enableSPA: true
-disablecopy: true
 enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: true
@@ -25,3 +24,6 @@ links:
     link: https://twitter.com/_jzhao
   - link_name: Github
     link: https://github.com/jackyzha0
+##############################################################
+# Added by Me
+disablecopy: true

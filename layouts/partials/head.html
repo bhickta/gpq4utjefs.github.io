@@ -55,11 +55,15 @@
   <script src="{{$popover.Permalink}}"></script>
 
   <!-- Optional scripts -->
+
+  <!-- ############################################ -->
+  <!-- Added by Me -->
   {{ if $.Site.Data.config.disablecopycontent }}
   {{ $copy := resources.Get "js/disable-copy.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script src="{{$copy.Permalink}}"></script>
   {{end}}
-
+  <!-- ############################################## -->
+  
   {{ if $.Site.Data.config.enableCodeBlockTitle }}
   {{ $codeTitle := resources.Get "js/code-title.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script src="{{$codeTitle.Permalink}}"></script>
