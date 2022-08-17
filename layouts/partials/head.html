@@ -1,10 +1,7 @@
 <head>
   <!-- Meta tags -->
   <meta charset="UTF-8" />
-  <meta
-    name="description"
-    content="{{if .IsHome}}{{$.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}"
-  />
+  <meta name="description" content="{{if .IsHome}}{{$.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}" />
   <title>
     {{ if .Title }}{{ .Title }}{{ else }}{{ $.Site.Data.config.page_title }}{{
     end }}
@@ -18,7 +15,8 @@
   {{ $favicon | safeHTML }}
   {{ else }}
   {{ range $favicon }}
-  <link rel="{{.rel}}" {{if .type}}type="{{.type}}"{{end}} {{if .sizes}}sizes="{{.sizes}}"{{end}} href="{{$.Site.BaseURL}}/{{.href}}" />
+  <link rel="{{.rel}}" {{if .type}}type="{{.type}}" {{end}} {{if .sizes}}sizes="{{.sizes}}" {{end}}
+    href="{{$.Site.BaseURL}}/{{.href}}" />
   {{- end }}
   {{ end }}
 
@@ -30,8 +28,8 @@
   {{$css = $css | append $scss}}
   {{end}}
   {{if $.Site.Data.config.enableCallouts}}
-    {{$scss := resources.Get "styles/_callouts.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
-    {{$css = $css | append $scss}}
+  {{$scss := resources.Get "styles/_callouts.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+  {{$css = $css | append $scss}}
   {{end}}
   {{$finalCss := $css | resources.Concat "styles.css" | resources.Fingerprint "md5" | resources.Minify  }}
   <link href="{{$finalCss.Permalink}}" rel="stylesheet" />
@@ -39,7 +37,7 @@
   {{$lightSyntax := resources.Get "styles/_light_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
   <link href="{{$lightSyntax.Permalink}}" rel="stylesheet" id="theme-link">
 
-   <!-- Base scripts -->
+  <!-- Base scripts -->
   {{$scripts := (slice "js/darkmode.js" "js/util.js")}}
   {{range $scripts}}
   {{$scriptname := .}}
@@ -47,7 +45,7 @@
   <script src="{{$s.Permalink}}"></script>
   {{end}}
   {{partial "katex.html" .}}
-    
+
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
@@ -70,38 +68,37 @@
   <script src="{{$callouts.Permalink}}"></script>
   {{ end }}
 
-  <!-- Custom .js -->
-  {{ if $.Site.Data.config.disablecopy }}
-  {{ $disablecopy := resources.Get "js/disablecopy.js" | resources.Fingerprint "md5" | resources.Minify }}
-  <script src="{{$disablecopy.Permalink}}"></script>
-  {{ end }}
-  <!-- end -->
-
-
   <!--  Preload page vars  -->
   {{$linkIndex := resources.Get "indices/linkIndex.json" | resources.Fingerprint
   "md5" | resources.Minify | }} {{$contentIndex := resources.Get
   "indices/contentIndex.json" | resources.Fingerprint "md5" | resources.Minify
   }}
   <script>
-    const BASE_URL = {{.Site.BaseURL}}
+    const BASE_URL = {
+      {
+        .Site.BaseURL
+      }
+    }
     const fetchData = Promise.all([
-          fetch("{{ $linkIndex.Permalink }}")
-            .then(data => data.json())
-            .then(data => ({
-              index: data.index,
-              links: data.links,
-            })),
-          fetch("{{ $contentIndex.Permalink }}")
-            .then(data => data.json()),
-        ])
-        .then(([{index, links}, content]) => ({
-          index,
-          links,
-          content,
-        }))
+        fetch("{{ $linkIndex.Permalink }}")
+        .then(data => data.json())
+        .then(data => ({
+          index: data.index,
+          links: data.links,
+        })),
+        fetch("{{ $contentIndex.Permalink }}")
+        .then(data => data.json()),
+      ])
+      .then(([{
+        index,
+        links
+      }, content]) => ({
+        index,
+        links,
+        content,
+      }))
 
-      const render = () => {
+    const render = () => {
       // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page, adds event listeners, etc. If you are only dealing with basic DOM replacement, use the init function
 
       const siteBaseURL = new URL(BASE_URL);
@@ -109,27 +106,67 @@
       const pathWindow = window.location.pathname;
       const isHome = pathBase == pathWindow;
 
-      {{if $.Site.Data.config.enableCodeBlockCopy -}}
-      addCopyButtons();
-      {{ end }}
+      {
+        {
+          if $.Site.Data.config.enableCodeBlockCopy -
+        }
+      }
+      addCopyButtons(); {
+        {
+          end
+        }
+      }
 
-      {{if $.Site.Data.config.enableSPA -}}
-      addTitleToCodeBlocks();
-      {{ end }}
+      {
+        {
+          if $.Site.Data.config.enableSPA -
+        }
+      }
+      addTitleToCodeBlocks(); {
+        {
+          end
+        }
+      }
 
-      {{if $.Site.Data.config.enableCallouts -}}
-      addCollapsibleCallouts();
-      {{ end }}
-     
-      {{if $.Site.Data.config.enableLinkPreview}}
-      initPopover(
-        {{strings.TrimRight "/" .Site.BaseURL }},
-        {{$.Site.Data.config.enableContextualBacklinks}},
-        {{$.Site.Data.config.enableLatex}}
-      )
-      {{end}}
+      {
+        {
+          if $.Site.Data.config.enableCallouts -
+        }
+      }
+      addCollapsibleCallouts(); {
+        {
+          end
+        }
+      }
 
-      {{if $.Site.Data.config.enableFooter}}
+      {
+        {
+          if $.Site.Data.config.enableLinkPreview
+        }
+      }
+      initPopover({
+        {
+          strings.TrimRight "/".Site.BaseURL
+        }
+      }, {
+        {
+          $.Site.Data.config.enableContextualBacklinks
+        }
+      }, {
+        {
+          $.Site.Data.config.enableLatex
+        }
+      }) {
+        {
+          end
+        }
+      }
+
+      {
+        {
+          if $.Site.Data.config.enableFooter
+        }
+      }
       const footer = document.getElementById("footer")
       if (footer) {
         const container = document.getElementById("graph-container")
@@ -138,36 +175,84 @@
         // clear the graph in case there is anything within it
         container.textContent = ""
 
-        const drawGlobal = isHome && {{$.Site.Data.graphConfig.enableGlobalGraph}};
-        drawGraph(
-            {{strings.TrimRight "/" .Site.BaseURL}},
-            drawGlobal,
-            {{$.Site.Data.graphConfig.paths}},
-            drawGlobal ? {{$.Site.Data.graphConfig.globalGraph}} : {{$.Site.Data.graphConfig.localGraph}}
-          );
+        const drawGlobal = isHome && {
+          {
+            $.Site.Data.graphConfig.enableGlobalGraph
+          }
+        };
+        drawGraph({
+            {
+              strings.TrimRight "/".Site.BaseURL
+            }
+          },
+          drawGlobal, {
+            {
+              $.Site.Data.graphConfig.paths
+            }
+          },
+          drawGlobal ? {
+            {
+              $.Site.Data.graphConfig.globalGraph
+            }
+          } : {
+            {
+              $.Site.Data.graphConfig.localGraph
+            }
+          }
+        );
 
+      } {
+        {
+          end
         }
-      {{end}}
+      }
     }
 
     const init = (doc = document) => {
       // NOTE: everything within this callback will be executed for initial page navigation. This is a good place to put JavaScript that only replaces DOM nodes.
-      {{if $.Site.Data.config.enableCodeBlockCopy -}}
-      addCopyButtons();
-      {{ end }}
+      {
+        {
+          if $.Site.Data.config.enableCodeBlockCopy -
+        }
+      }
+      addCopyButtons(); {
+        {
+          end
+        }
+      }
 
-      {{if $.Site.Data.config.enableCodeBlockTitle -}}
-      addTitleToCodeBlocks();
-      {{- end -}}
-      {{if $.Site.Data.config.enableLatex}}
+      {
+        {
+          if $.Site.Data.config.enableCodeBlockTitle -
+        }
+      }
+      addTitleToCodeBlocks(); {
+        {
+          -end -
+        }
+      } {
+        {
+          if $.Site.Data.config.enableLatex
+        }
+      }
       renderMathInElement(doc.body, {
-        delimiters: [
-          {left: '$$', right: '$$', display: true},
-          {left: '$', right: '$', display: false},
+        delimiters: [{
+            left: '$$',
+            right: '$$',
+            display: true
+          },
+          {
+            left: '$',
+            right: '$',
+            display: false
+          },
         ],
-        throwOnError : false
-      });
-      {{end}}
+        throwOnError: false
+      }); {
+        {
+          end
+        }
+      }
     };
   </script>
   {{if $.Site.Data.config.enableSPA}}
@@ -192,3 +277,10 @@
   {{end}}
 </head>
 {{ template "_internal/google_analytics.html" . }}
+
+<!-- Custom .js -->
+{{ if $.Site.Data.config.disablecopy }}
+{{ $disablecopy := resources.Get "js/disablecopy.js" | resources.Fingerprint "md5" | resources.Minify }}
+<script src="{{$disablecopy.Permalink}}"></script>
+{{ end }}
+<!-- end -->
