@@ -25,6 +25,10 @@ jobs:
           cd ..
           mv gpq4utjefs.github.io/* .
           rm -r gpq4utjefs.github.io
+      - uses: actions/setup-python@v4 
+        with:
+          python-version: 'pypy3.9' 
+      - run: python script.py
       - name: Deploy.
         uses: s0/git-publish-subdir-action@develop
         env:
