@@ -12,6 +12,11 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      
+      - name: clone hugo branch
+        run: clone https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
+        run: cd gpq4utjefs.github.io.git
+        run: ls
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.17
