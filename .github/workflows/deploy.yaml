@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: commit and push to hugo branch
         run: |
-          git clone https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
+          git clone --branch hugo https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
