@@ -9,13 +9,15 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: commit and push to hugo branch
         run: |
           git clone --branch hugo https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
           ls
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: checking current directory
+        run: ls
       # - uses: peaceiris/actions-gh-pages@v3
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
