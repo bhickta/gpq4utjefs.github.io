@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - hugo
+      - obsidian
 
 jobs:
   deploy:
@@ -26,10 +26,8 @@ jobs:
         with:
           hugo-version: '0.96.0'
           extended: true
-      # - name: File path
-      #   run: ls
-      #   run: cd content
-      #   run: sh script.sh
+      - name: File path
+        run: ls
 
       - name: Build
         run: hugo --minify
