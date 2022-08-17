@@ -17,9 +17,15 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: checking current directory
+        run: |
+          ls
+      - name: Push to gh-pages branch --force
+        # You may pin to the exact commit or the version.
+        # uses: ftnext/action-push-ghpages@621f3b2f1d34079b4da6051daedb3e200af0dd38
+        uses: ftnext/action-push-ghpages@v1.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: /home/runner/work/gpq4utjefs.github.io/gpq4utjefs.github.io/gpq4utjefs.github.io
-          publish_branch: hugo  # deploying branch
-          cname: gpq4utjefs.github.io
+          # Path to the directory where the static assets are located.
+          build_dir: /home/runner/work/gpq4utjefs.github.io/gpq4utjefs.github.io/gpq4utjefs.github.io
+          # Create github token in repo/settings/secrets/actions with name GithubToken
+          github_token: ${{ secrets.GithubToken }}
