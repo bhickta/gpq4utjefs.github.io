@@ -19,13 +19,13 @@ jobs:
           ls
           git clone https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
 
-      - name: Build Link Index
-        uses: jackyzha0/hugo-obsidian@v2.17
-        with:
-          index: true
-          input: content
-          output: assets/indices
-          root: .
+      # - name: Build Link Index
+      #   uses: jackyzha0/hugo-obsidian@v2.17
+      #   with:
+      #     index: true
+      #     input: content
+      #     output: assets/indices
+      #     root: .
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
