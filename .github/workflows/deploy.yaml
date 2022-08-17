@@ -14,6 +14,7 @@ jobs:
           git clone --branch hugo https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
           cd gpq4utjefs.github.io
           pwd
+          ls
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
