@@ -15,9 +15,10 @@ jobs:
       - name: commit and push to hugo branch
         run: |
           git clone --branch hugo https://github.com/gpQ4utjefs/gpq4utjefs.github.io.git
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          publish_branch: hugo  # deploying branch
-          cname: gpq4utjefs.github.io
+          ls
+      # - uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./
+      #     publish_branch: hugo  # deploying branch
+      #     cname: gpq4utjefs.github.io
