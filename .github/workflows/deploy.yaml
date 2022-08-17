@@ -19,6 +19,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: checking current directory
         run: cd ..
+        run: ls
       # - uses: peaceiris/actions-gh-pages@v3
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
