@@ -9,7 +9,7 @@
 ## 08
 ## 09
 ## 10
-* 
+*
 ## 11
 * Deloitte India + UP govt. #gk/state/mou
 * Donyi polo airport Itanagar AP #gk/state/infra
@@ -40,7 +40,7 @@
 ## 12
 * V Pranav 75th GM #gk/sports/chess
 * Highest railway bridge chenab b. JK #gk/superlative
-* 
+*
 ## 13
 ## 14
 ## 15
@@ -55,7 +55,37 @@
 ## 24
 ## 25
 ## 26
+* 
 ## 27
+* 2022 liberty medal, ronald freedom, kenedy courage, churchil leadership #gk/award Zelenskyy
+* world water week last august "seen unseen: water value" stockholm int. #gk/day/i 
+* Pulitzer 2022 Fahmida azim (bangaladesh) insider magazine uigur china #gk/award/i
+* Antim pangal #gk/sports gold u20 wrestling; sofia bulguaria; 1st female
+* HPCL cowdung biogass #gk/state/infra gobardhan rajasthan
+* CM's micro finance scheme; nagaland #gk/state/scheme
+* Sex ratio at birth NFHS 2019-21 108/100(girls); missing girls - 4.1Lakh
+* Largest asia compress gas punjab #gk/state/env 
+* AI global summit saudi arabi "AI for humanity good" #gk/summit/i
+* 1st edu township @UP #gk/state/infra 
+* asia biggest pvt hospital amrita haryana by matha #gk/superlative 
+* sugar substitute "xylitol" fermentation method IIT Guwahati #gk/st/invention
+* bat discovered "phillipse" india lanka #gk/env/discovered
+* "yakshagana bhutaradhanre nagaradhane" worship tradition #gk/culture
+* Zaporizzhia nuclear power plant ukraine #gk/place-in-news
+* Kukrail forest @UP night safari #gk/env 
+* "NIPAM" IP rights awareness #gk/scheme
+* 19A day humanitrian #gk/day/i 
+* 21A day senior citizen; photography #gk/day/i 
+* 20A day mosquito #gk/day/i 
+* 13A day organ donation #gk/day/i 
+* 12A day youth "world for all ages" #gk/day/i 
+* 10A day lion #gk/day/i 
+* Manisha kalyan footbal uefa league 1st AIFF women/year {Chetri men} #gk/sports/football
+* Dahi handi state sports mha #gk/sports/state
+* Rudi "umpire" book "slow death" died #gk/died/sports
+* Rupal chaudhary U20 Athletics #gk/sports/athletics
+* V Pranav 75 GM form TN (27th) #gk/sports/chess 
+* Tajaswin shakaran high jump 1st Indian CWG #gk/sports/athletics 
 ## 28
 ## 29
 ## 30
