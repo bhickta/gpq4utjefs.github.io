@@ -20,4 +20,8 @@
 # config dir
 .obsidian/
 
+### Projects ###
+# config dir
+.Projects/
+
 # End of https://www.toptal.com/developers/gitignore/api/git,obsidian
